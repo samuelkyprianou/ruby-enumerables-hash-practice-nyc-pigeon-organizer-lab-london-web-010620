@@ -5,6 +5,7 @@ def nyc_pigeon_organizer(data)
   data.each do |att, key|
     key.each do |stats, array_names|
       array_names.each do |name|
+        if 
     binding.pry
   end
   end
