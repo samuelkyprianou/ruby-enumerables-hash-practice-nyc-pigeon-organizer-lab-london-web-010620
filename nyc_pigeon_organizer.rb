@@ -5,9 +5,12 @@ def nyc_pigeon_organizer(data)
   data.each do |att, key|
     key.each do |stats, array_names|
       array_names.each do |name|
-        pigeon_list[name] ||= {}
-        end
+         pigeon_list[name] ||= {}
+        pigeon_list[name][attribute_name] ||= []
+        pigeon_list[name][attribute_name].push(attribute_value.to_s)
+      end
+    end 
   end
-  end
-  end
+
+  pigeon_list
 end
