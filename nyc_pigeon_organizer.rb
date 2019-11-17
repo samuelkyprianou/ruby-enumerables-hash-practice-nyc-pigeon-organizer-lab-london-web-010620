@@ -6,7 +6,8 @@ def nyc_pigeon_organizer(data)
     key.each do |stats, array_names|
       array_names.each do |name|
         if !pigeon_list[name]
-          pigeon
+          pigeon_list[name] = {}
+        end
     binding.pry
   end
   end
