@@ -9,7 +9,6 @@ def nyc_pigeon_organizer(data)
         pigeon_list[name][att] ||= []
         pigeon_list[name][att].push(stats.to_s)
       end
-      binding.pry
     end 
   end
   pigeon_list
